@@ -1,13 +1,16 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  width: 1100px;
-  margin: 0 auto;
-  font-family: Raleway, sans-serif;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+body * {
+    font-family: Raleway, sans-serif;
 }
 
 h1,
@@ -16,19 +19,36 @@ h3,
 h4,
 h5,
 h6,
-p,
 ul,
 ol,
 li,
 blockquote {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  color: inherit;
+    color: inherit;
 }
 
 img {
-  width: 100%;
+    width: 100%;
+}
+
+p {
+    /* margin-bottom:12px; */
+    font-size: 20px;
+    margin-block-start: 23px;
+    margin-block-end: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.35rem;
+}
+a{
+    text-underline-offset: 3px;
 }
