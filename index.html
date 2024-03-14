@@ -1,61 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="fonts/fonts.css"/>
-    <link rel="stylesheet" href="styles/global.css"/>
-    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <header class="header">
         <nav class="block header-menu">
             <ul class="menu-links ">
-                <li class="menu-item"><a href="#">главная</a></li>
+                <li class="menu-item"><a class="selected" href="#">главная</a></li>
                 <li class="menu-item"><a href=""> посмотреть лоты</a></li>
                 <li class="menu-item"><a href="">об аукционе</a></li>
             </ul>
         </nav>
     <a class="block-logo" href="#">
-        <img src="images/logo-black.svg" class="logo"/>
+        <img src="images/logo-black.svg" class="logo" alt="logo">
     </a>
     <div class="block contacts">
-        <a class="contact" href="tel:+9 999 555 5555"> +9 999 555 5555</a>
+        <a class="contact" href="tel:+99995555555"> +9 999 555 5555</a>
         <a class="contact" href="mailto:info@sobaka.ge"> info@sobaka.ge</a>
-        <div class="contact"> наб. Принсенграхт 263- 265, Амстердам</div>
+        <p class="contact"> наб. Принсенграхт 263- 265, Амстердам</p>
     </div>
 </header>
 <main>
 <section class="page-main">
-    <div class="page-wrapper">
+    <div class="block-lens">
+    </div>
         <div class="block-content">
-            <div class="title">
-                <div class="title-line title-line-left">
-                    <span class="letter">o</span>
-                    <span class="letter with-spacing">н</span>
-                    <span class="letter">o</span>
-                </div>
-                <div class="title-line title-line-center">
-                    <span class="letter">т</span>
-                    <span class="letter">e</span>
-                    <span class="letter with-spacing">б</span>
-                    <span class="letter">e</span>
-                </div>
-                <div class="title-line title-line-right">
-                    <span class="letter with-spacing">н</span>
-                    <span class="letter">а</span>
-                    <span class="letter">д</span>
-                    <span class="letter">о</span>
-                </div>
-            </div>
+            <h1 class="title">
+                <span class="title-line title-line-left">
+                   o<span class="with-spacing">н</span><span class="last-letter">o</span>
+                </span>
+                <span class="title-line title-line-center">
+                    тe<span class="with-spacing">б</span><span class="last-letter">е</span>
+                </span>
+                <span class="title-line title-line-right">
+                    <span class="with-spacing">н</span>ад<span class="last-letter">o</span>
+                </span>
+            </h1>
             <div class="subline">
                 <p class="text">аукцион вещей в которые никто не верил</p>
                     <button class="button" type="button">сделать ставку</button>
             </div>
         </div>
-    </div>
+
 </section>
 <section class="page-lots">
     <h2 class="block-header">
@@ -63,6 +56,7 @@
     </h2>
     <div class="block-content">
         <a class="lot lot-film" href="#">
+            <div class="block-lens"></div>
             <div class="lot-wrapper">
                 <h3 class="lot-title">
                     Фильм режиссёра, который бросил киношколу
@@ -75,6 +69,7 @@
             </div>
         </a>
         <a class="lot lot-book" href="#">
+            <div class="block-lens"></div>
             <div class="lot-wrapper">
                 <h3 class="lot-title">
                     Книга, где описан один скучный день из жизни рекламного агента
@@ -89,6 +84,7 @@
             </div>
         </a>
         <a class="lot lot-painting" href="#">
+            <div class="block-lens"></div>
             <div class="lot-wrapper">
                 <h3 class="lot-title">
                     Картина, которую повторит даже 5-летний сын маминой подруги
@@ -109,7 +105,7 @@
 <section class="page-about-auction">
     <div class="block-logo">
         <div class="logo-circle">
-            <img src="images/logo-white.svg" class="logo"/>
+            <img src="images/logo-white.svg" class="logo" alt="logo">
         </div>
 
     </div>
@@ -134,15 +130,15 @@
 </main>
 <footer class="footer">
     <div class="block contacts">
-        <div class="contact"><a href="tel:+9 999 555 5555"> +9 999 555 5555</a></div>
-        <div class="contact"><a href="mailto:info@sobaka.ge"> info@sobaka.ge</a></div>
-        <div class="contact"> наб. Принсенграхт 263- 265, Амстердам</div>
+        <a class="contact" href="tel:+99995555555"> +9 999 555 5555</a>
+        <a class="contact" href="mailto:info@sobaka.ge"> info@sobaka.ge</a>
+        <p class="contact"> наб. Принсенграхт 263- 265, Амстердам</p>
     </div>
     <nav class="block header-menu">
         <ul class="footer-menu">
-            <li class="menu"><a href="#" class="selected"> главная</a></li>
-            <li class="menu"><a href=""> посмотреть лоты</a></li>
-            <li class="menu"><a href="">об аукционе</a></li>
+            <li class="menu-item"><a href="#" class="selected"> главная</a></li>
+            <li class="menu-item"><a href=""> посмотреть лоты</a></li>
+            <li class="menu-item"><a href="">об аукционе</a></li>
         </ul>
     </nav>
         <ul class="block social-links">
