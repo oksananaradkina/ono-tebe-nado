@@ -54,7 +54,6 @@ ul {
 }
 
 .page-main {
-    width: 1100px;
     margin: 0 auto;
     margin-top: 82px;
     background: url('../images/cover.jpg') no-repeat;
@@ -67,11 +66,6 @@ ul {
     text-transform: uppercase;
 }
 
-.page-main .title {
-    padding-top: 166px;
-    margin-bottom: 126px;
-}
-
 .contact {
     font-size: 18px;
     line-height: 1.55rem;
@@ -80,7 +74,7 @@ ul {
 }
 
 .page-main .block-content {
-    padding: 0px 44px 30px 50px;
+    padding: 165px 50px 50px 50px;
     position: relative;
     z-index: 1;
 }
@@ -90,13 +84,12 @@ ul {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .subline .text {
-    width: 638px;
-    text-align: justify;
-    text-align-last: justify;
-    margin-top: 3px;
+    margin: 0;
 }
 
 .page-lots {
@@ -108,10 +101,12 @@ ul {
 .page-lots .block-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 .page-lots .block-footer {
-    padding: 30px 0 0 40px;
+    padding: 32px 0 0 40px;
 }
 
 .page-lots .block-header {
@@ -183,11 +178,10 @@ ul {
     margin: 172px auto 0;
     display: grid;
     grid-template-columns: 334px 1fr 1fr;
-    grid-template-rows: 208px auto;
     grid-template-areas:
         'logo header header'
         'logo content content';
-    gap: 24px;
+    gap: 0px 24px;
     justify-self: start;
 }
 
@@ -208,16 +202,15 @@ ul {
 }
 
 .page-about-auction .block-content p {
-    margin-bottom: 12px;
     font-size: 20px;
-    margin-block-start: 26px;
-    margin-block-end: 20px;
+    margin-block-start: 0;
+    margin-block-end: 24px;
 }
 
 .page-about-auction .block-header {
     text-transform: uppercase;
     font-size: 40px;
-    line-height: 16.5rem;
+    padding: 112px 0 100px;
 }
 
 .page-about-auction .block-logo {
@@ -246,7 +239,7 @@ ul {
 
 .footer {
     width: 1000px;
-    margin: 160px auto 88px;
+    margin: 158px auto 88px;
     display: flex;
 }
 
@@ -306,6 +299,7 @@ ul {
     display: flex;
     padding-top: 20px;
     line-height: 100px;
+    letter-spacing: 30px;
 }
 
 .title-line:first-child {
@@ -317,13 +311,12 @@ ul {
     letter-spacing: 30px;
 }
 .with-spacing {
-    padding-right: 27px;
+    letter-spacing: 60px;
 }
-.last-letter{
+.no-letter-spacing{
  letter-spacing: 0;
 }
 .title-line-center {
-    padding-right: 62px;
     justify-content: center;
 }
 
@@ -333,25 +326,28 @@ ul {
 
 .subline {
     display: flex;
-    justify-content: space-between;
-    width: 1000px;
-    padding-left: 28px;
+    justify-content: end;
+    align-items: center;
+    gap: 76px;
+    padding-top: 134px;
 }
 
 .subline .text {
+    display: inline-block;
     color: #ffffff;
     font-size: 22px;
     text-transform: uppercase;
-    line-height: 3rem;
+    text-align: right;
+    flex: 4;
+    word-spacing: 19px;
 }
 
 .subline button {
+    display: block;
     color: #ffffff;
     font-size: 22px;
-    height: 50px;
     border: 1px solid #ffffff;
     background-color: transparent;
-    padding: 0 32px;
+    padding: 12px 32px;
     text-transform: uppercase;
-    font-family: inherit;
 }
